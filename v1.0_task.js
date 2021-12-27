@@ -71,6 +71,10 @@ const nativeSlice = (list, begin, end) => {
     pos = list.length + end;
   }
 
+  if (minusBegin && end === undefined) {
+    begin = list.length + begin;
+  }
+
   for (let i = begin; i < pos; i++) {
     newList = [...newList, list[i]];
   }
