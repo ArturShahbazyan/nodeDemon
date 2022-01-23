@@ -91,7 +91,7 @@ function avengers(heros, villians) {
   attack(villians[randAvenger(villainsKeys)]);
 }
 
-fighter = (name) => {
+const fighter = (name) => {
   return {
     name: name,
     speed: Math.floor(Math.random() * 5) + 1,
